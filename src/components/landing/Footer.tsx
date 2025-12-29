@@ -13,7 +13,7 @@ const Footer = () => (
         <div className="flex items-center gap-2">
           <span className="text-xl opacity-60">🌿</span>
           <span className="text-base-500 text-sm">
-            Made with 🌱 by{" "}
+            Made with 🌿 by{" "}
             <a
               href={app.organization.website}
               target="_blank"
