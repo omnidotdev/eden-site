@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { XIcon as CloseIcon, MenuIcon } from "lucide-react";
+import { XIcon as CloseIcon, ExternalLink, MenuIcon } from "lucide-react";
 import { useState } from "react";
 
 import { ThemeToggle } from "@/components/core";
@@ -38,18 +38,20 @@ const Header = () => {
                 href={app.links.docs}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:text-foreground dark:text-base-400 dark:hover:text-foreground"
+                className="flex items-center gap-1 rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:text-foreground dark:text-base-400 dark:hover:text-foreground"
               >
                 Docs
+                <ExternalLink className="size-3" />
               </a>
 
               <a
                 href={app.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:text-foreground dark:text-base-400 dark:hover:text-foreground"
+                className="flex items-center gap-1 rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:text-foreground dark:text-base-400 dark:hover:text-foreground"
               >
                 GitHub
+                <ExternalLink className="size-3" />
               </a>
 
               <ThemeToggle />
@@ -86,18 +88,20 @@ const Header = () => {
               href={app.links.docs}
               target="_blank"
               rel="noopener noreferrer"
-              className="block rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:bg-base-100 hover:text-foreground dark:text-base-400 dark:hover:bg-base-800 dark:hover:text-foreground"
+              className="flex items-center gap-1 rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:bg-base-100 hover:text-foreground dark:text-base-400 dark:hover:bg-base-800 dark:hover:text-foreground"
             >
               Docs
+              <ExternalLink className="size-3" />
             </a>
 
             <a
               href={app.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="block rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:bg-base-100 hover:text-foreground dark:text-base-400 dark:hover:bg-base-800 dark:hover:text-foreground"
+              className="flex items-center gap-1 rounded-md px-3 py-2 font-medium text-base-600 text-sm hover:bg-base-100 hover:text-foreground dark:text-base-400 dark:hover:bg-base-800 dark:hover:text-foreground"
             >
               GitHub
+              <ExternalLink className="size-3" />
             </a>
           </div>
         </div>
