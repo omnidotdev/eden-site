@@ -1,4 +1,5 @@
 import { ArrowRight, Github, Leaf } from "lucide-react";
+import { SiRust } from "react-icons/si";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,10 +14,11 @@ const HeroSection = () => (
       <div className="mb-6 flex justify-center gap-2">
         <Badge className="border-green-500/20 bg-green-500/10 text-green-700 dark:text-green-300">
           <Leaf className="mr-1 size-3" />
-          Open Source
+          Open Source (MIT)
         </Badge>
         <Badge className="border-amber-500/20 bg-amber-500/10 text-amber-700 dark:text-amber-300">
-          Rust-Powered
+          <SiRust className="mr-1 size-3" />
+          Rust-Powered (Blazingly Fast)
         </Badge>
       </div>
 

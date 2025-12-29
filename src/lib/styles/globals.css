@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-texturina: "Texturina", serif;
   --font-display: var(--display-family);
   --font-text: var(--text-family);
 
@@ -113,6 +114,11 @@
   }
   body {
     @apply bg-background text-foreground overscroll-y-none overflow-x-clip;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-texturina);
   }
 }
 

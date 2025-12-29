@@ -6,7 +6,7 @@ const useCases = [
   {
     icon: Users,
     title: "New Developer Onboarding",
-    description: "Include in your README as the first setup step",
+    description: "Include in your README.md as the first setup step",
   },
   {
     icon: Clock,
@@ -21,7 +21,7 @@ const useCases = [
   {
     icon: Code,
     title: "Self-Documenting",
-    description: "eden.toml becomes your requirements doc",
+    description: "Eden config file becomes your requirements doc",
   },
 ];
 

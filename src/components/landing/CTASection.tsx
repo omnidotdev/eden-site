@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import app from "@/lib/config/app.config";
@@ -22,14 +22,16 @@ const CTASection = () => (
           onClick={() => window.open(app.links.github, "_blank")}
         >
           <Github className="mr-2 size-5" />
-          Get Started
+          View on GitHub
         </Button>
+
         <Button
           size="lg"
           variant="outline"
           onClick={() => window.open(app.links.docs, "_blank")}
         >
-          Documentation
+          Read the Docs
+          <ArrowRight className="ml-2 size-5" />
         </Button>
       </div>
     </div>

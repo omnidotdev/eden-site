@@ -5,18 +5,46 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const configExample = `[checks]
-binaries = ["docker", "node", "pnpm"]
+const ConfigExample = () => (
+  <>
+    <span className="text-purple-600 dark:text-purple-400">[checks]</span>
+    {"\n"}
+    <span className="text-blue-600 dark:text-blue-400">binaries</span>
+    <span className="text-base-500"> = </span>
+    <span className="text-green-600 dark:text-green-400">
+      ["docker", "node", "bun"]
+    </span>
+    {"\n"}
+    <span className="text-blue-600 dark:text-blue-400">environment</span>
+    <span className="text-base-500"> = </span>
+    <span className="text-green-600 dark:text-green-400">
+      ["DATABASE_URL", "API_KEY"]
+    </span>
+  </>
+);
+
+const UsageExample = () => (
+  <>
+    <span className="text-base-400 dark:text-base-500"># Install Eden</span>
+    {"\n"}
+    <span className="text-amber-600 dark:text-yellow-400">cargo</span> install
+    eden-cli
+    {"\n\n"}
+    <span className="text-base-400 dark:text-base-500">
+      # Initialize config
+    </span>
+    {"\n"}
+    <span className="text-amber-600 dark:text-yellow-400">eden</span> init
+    {"\n\n"}
+    <span className="text-base-400 dark:text-base-500"># Run checks</span>
+    {"\n"}
+    <span className="text-amber-600 dark:text-yellow-400">eden</span> check
+  </>
+);
+
+const configRaw = `[checks]
+binaries = ["docker", "node", "bun"]
 environment = ["DATABASE_URL", "API_KEY"]`;
-
-const usageExample = `# Install Eden
-cargo install eden-cli
-
-# Initialize config
-eden init
-
-# Run checks
-eden check`;
 
 /**
  * Configuration example section with tabs for config and usage.
@@ -24,8 +52,8 @@ eden check`;
 const ConfigSection = () => {
   const [copied, setCopied] = useState(false);
 
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(configRaw);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -50,7 +78,7 @@ const ConfigSection = () => {
                   variant="ghost"
                   size="icon"
                   className="absolute top-2 right-2"
-                  onClick={() => copyToClipboard(configExample)}
+                  onClick={copyToClipboard}
                 >
                   {copied ? (
                     <CheckCheck className="size-4 text-green-500" />
@@ -59,7 +87,9 @@ const ConfigSection = () => {
                   )}
                 </Button>
                 <pre className="overflow-x-auto font-mono text-sm">
-                  <code>{configExample}</code>
+                  <code>
+                    <ConfigExample />
+                  </code>
                 </pre>
               </CardContent>
             </Card>
@@ -69,7 +99,9 @@ const ConfigSection = () => {
             <Card>
               <CardContent className="pt-6">
                 <pre className="overflow-x-auto font-mono text-sm">
-                  <code>{usageExample}</code>
+                  <code>
+                    <UsageExample />
+                  </code>
                 </pre>
               </CardContent>
             </Card>

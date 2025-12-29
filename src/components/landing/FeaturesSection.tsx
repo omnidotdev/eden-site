@@ -19,7 +19,7 @@ const features = [
   },
   {
     icon: Globe,
-    title: "Env Var Checks",
+    title: "Environment Variable Checks",
     description: "Ensure environment variables are set",
   },
   {
@@ -29,13 +29,13 @@ const features = [
   },
   {
     icon: Zap,
-    title: "Rust-Powered",
+    title: "Rust-Powered (Blazingly Fast)",
     description: "Lightning fast with minimal overhead",
   },
   {
     icon: Users,
     title: "Team Ready",
-    description: "Commit eden.toml to share requirements",
+    description: "Commit Eden config file to share requirements",
   },
   {
     icon: Clock,
@@ -45,7 +45,7 @@ const features = [
   {
     icon: Download,
     title: "Easy Install",
-    description: "cargo install or download binaries",
+    description: "cargo install, one simple binary",
   },
   {
     icon: Shield,
