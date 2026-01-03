@@ -19,7 +19,7 @@ const app = {
     website: "https://omni.dev",
   },
   links: {
-    docs: "https://docs.omni.dev/forge/eden",
+    docs: "https://docs.omni.dev/armory/eden",
     github: "https://github.com/omnidotdev/eden-cli",
   },
 };
