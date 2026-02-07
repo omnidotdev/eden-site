@@ -28,7 +28,7 @@ const Header = () => {
                 {app.name}
               </span>
               <Badge className="hidden border-green-500/20 bg-green-500/10 text-green-700 text-xs sm:inline-flex dark:text-green-300">
-                Alpha
+                Early Access
               </Badge>
             </Link>
 

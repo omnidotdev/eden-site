@@ -20,6 +20,8 @@ export function getRouter() {
     context: { queryClient },
     defaultPreload: "intent",
     defaultPreloadStaleTime: 0,
+    // Scroll restoration on navigation
+    scrollRestoration: true,
   });
 
   return router;
