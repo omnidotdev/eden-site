@@ -3,9 +3,9 @@
  */
 const app = {
   name: "Eden",
-  tagline: "Developer Onboarding Preflight Checks",
+  tagline: "In the beginning, there were dependencies",
   description:
-    "A Rust-powered CLI tool that verifies required dependencies and configurations are properly installed before development begins.",
+    "A Rust-powered CLI tool designed for developer onboarding that verifies required dependencies and configurations are properly installed before development begins.",
   keywords: [
     "CLI",
     "developer tools",
