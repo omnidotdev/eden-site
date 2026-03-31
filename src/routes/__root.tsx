@@ -5,7 +5,6 @@ import {
   createRootRouteWithContext,
   useRouteContext,
 } from "@tanstack/react-router";
-import { createServerFn } from "@tanstack/react-start";
 
 import { DefaultCatchBoundary } from "@/components/layout";
 import { Toaster } from "@/components/ui/sonner";
@@ -18,7 +17,6 @@ import { getTheme } from "@/server/functions/theme";
 
 import type { QueryClient } from "@tanstack/react-query";
 import type { ReactNode } from "react";
-
 
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient;
@@ -76,7 +74,7 @@ function MaintenancePage() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-pink-900 to-pink-800 p-8 text-white">
       <div className="text-center">
         <div className="mb-6 text-9xl">🌺</div>
-        <h1 className="mb-4 text-4xl font-bold">Paradise Found... Soon</h1>
+        <h1 className="mb-4 font-bold text-4xl">Paradise Found... Soon</h1>
         <p className="max-w-md text-lg text-pink-200">
           We're cultivating perfection. Eden will flourish again shortly.
         </p>
