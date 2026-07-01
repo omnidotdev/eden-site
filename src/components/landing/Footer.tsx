@@ -39,6 +39,12 @@ const Footer = () => (
             Terms
           </a>
           <a
+            href={app.legal.cookies}
+            className="text-base-500 text-sm transition-colors hover:text-foreground"
+          >
+            Cookies
+          </a>
+          <a
             href={app.links.github}
             target="_blank"
             rel="noopener noreferrer"

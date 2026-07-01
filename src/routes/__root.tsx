@@ -9,6 +9,7 @@ import {
 import { DefaultCatchBoundary } from "@/components/layout";
 import { Toaster } from "@/components/ui/sonner";
 import app from "@/lib/config/app.config";
+import { BASE_URL } from "@/lib/config/env.config";
 import { fetchMaintenanceMode } from "@/lib/providers";
 import appCss from "@/lib/styles/globals.css?url";
 import createMetaTags from "@/lib/util/createMetaTags";
@@ -58,6 +59,7 @@ export const Route = createRootRouteWithContext<{
         href: "https://fonts.googleapis.com/css2?family=Texturina:wght@400;500;600;700&display=swap",
       },
       { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: BASE_URL },
       {
         rel: "icon",
         type: "image/svg+xml",
@@ -81,6 +83,18 @@ export const Route = createRootRouteWithContext<{
         rel: "apple-touch-icon",
         sizes: "180x180",
         href: "/apple-touch-icon.png",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: app.name,
+          url: BASE_URL,
+          description: app.description,
+        }),
       },
     ],
   }),
