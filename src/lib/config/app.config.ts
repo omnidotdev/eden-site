@@ -21,6 +21,12 @@ const app = {
   links: {
     docs: "https://docs.omni.dev/armory/eden",
     github: "https://github.com/omnidotdev/eden-cli",
+    threads: "https://www.threads.com/@omnidotdev",
+  },
+  // Legal links mirror the omni-api catalog SSOT
+  legal: {
+    privacy: "https://omni.dev/legal/privacy",
+    terms: "https://omni.dev/legal/terms",
   },
 };
 

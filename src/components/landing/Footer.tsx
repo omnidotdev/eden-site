@@ -27,6 +27,18 @@ const Footer = () => (
 
         <div className="flex items-center gap-6">
           <a
+            href={app.legal.privacy}
+            className="text-base-500 text-sm transition-colors hover:text-foreground"
+          >
+            Privacy
+          </a>
+          <a
+            href={app.legal.terms}
+            className="text-base-500 text-sm transition-colors hover:text-foreground"
+          >
+            Terms
+          </a>
+          <a
             href={app.links.github}
             target="_blank"
             rel="noopener noreferrer"
