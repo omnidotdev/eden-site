@@ -13,7 +13,6 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@omnidotdev/providers": "github:omnidotdev/providers#49f2fc4",
     "@omnidotdev/thornberry": "github:omnidotdev/thornberry#6f878df",
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-tabs": "^1.1.13",
@@ -28,7 +27,6 @@
     "react-icons": "^5.5.0",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.4.0",
-    "unleash-client": "^6.3.0",
     "zod": "4.3.3"
   },
   "devDependencies": {
