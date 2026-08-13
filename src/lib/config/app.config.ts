@@ -3,6 +3,8 @@
  */
 const app = {
   name: "Eden",
+  // Product symbol, mirrors the omni-api catalog SSOT (`catalog/products.ts`)
+  icon: "🌿",
   tagline: "In the beginning, there were dependencies",
   description:
     "A Rust-powered CLI tool designed for developer onboarding that verifies required dependencies and configurations are properly installed before development begins.",
@@ -16,7 +18,7 @@ const app = {
   ],
   organization: {
     name: "Omni",
-    website: "https://omni.dev",
+    url: "https://omni.dev",
   },
   links: {
     docs: "https://docs.omni.dev/armory/eden",
