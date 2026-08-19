@@ -21,7 +21,7 @@ const app = {
     url: "https://omni.dev",
   },
   links: {
-    docs: "https://docs.omni.dev/armory/eden",
+    docs: "https://docs.omni.dev/products/eden",
     github: "https://github.com/omnidotdev/eden-cli",
     threads: "https://www.threads.com/@omnidotdev",
   },
