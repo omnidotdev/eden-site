@@ -1,10 +1,10 @@
+import { Badge } from "@omnidotdev/thornberry/badge";
+import { Button } from "@omnidotdev/thornberry/button";
 import { Link } from "@tanstack/react-router";
 import { XIcon as CloseIcon, ExternalLink, MenuIcon } from "lucide-react";
 import { useState } from "react";
 
 import { ThemeToggle } from "@/components/core";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import app from "@/lib/config/app.config";
 import { cn } from "@/lib/utils";
 

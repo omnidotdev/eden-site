@@ -1,6 +1,10 @@
+import {
+  CardContent,
+  CardHeader,
+  CardRoot,
+  CardTitle,
+} from "@omnidotdev/thornberry/card";
 import { Clock, Code, Shield, Users } from "lucide-react";
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const useCases = [
   {
@@ -34,18 +38,20 @@ const UseCasesSection = () => (
       <h2 className="mb-12 text-center font-bold text-3xl">Use Cases</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {useCases.map((useCase) => (
-          <Card
+          <CardRoot
             key={useCase.title}
             className="border-base-200/50 dark:border-base-800/50"
           >
             <CardHeader>
               <useCase.icon className="mb-2 size-6 text-green-600 dark:text-green-400" />
-              <CardTitle className="text-lg">{useCase.title}</CardTitle>
+              <CardTitle asChild>
+                <h3 className="text-lg">{useCase.title}</h3>
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-base-600 text-sm dark:text-base-400">
               {useCase.description}
             </CardContent>
-          </Card>
+          </CardRoot>
         ))}
       </div>
     </div>

@@ -1,8 +1,8 @@
+import { Badge } from "@omnidotdev/thornberry/badge";
+import { Button } from "@omnidotdev/thornberry/button";
 import { ArrowRight, Github, Leaf } from "lucide-react";
 import { SiRust } from "react-icons/si";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import app from "@/lib/config/app.config";
 
 /**
@@ -37,7 +37,7 @@ const HeroSection = () => (
           className="bg-green-600 hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-500"
           onClick={() => window.open(app.links.github, "_blank")}
         >
-          <Github className="mr-2 size-5" />
+          <Github className="size-5" />
           View on GitHub
         </Button>
         <Button
@@ -46,7 +46,7 @@ const HeroSection = () => (
           onClick={() => window.open(app.links.docs, "_blank")}
         >
           Read the Docs
-          <ArrowRight className="ml-2 size-5" />
+          <ArrowRight className="size-5" />
         </Button>
       </div>
     </div>

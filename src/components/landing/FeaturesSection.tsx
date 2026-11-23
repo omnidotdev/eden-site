@@ -1,4 +1,10 @@
 import {
+  CardContent,
+  CardHeader,
+  CardRoot,
+  CardTitle,
+} from "@omnidotdev/thornberry/card";
+import {
   Clock,
   Code,
   Download,
@@ -8,8 +14,6 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
@@ -63,18 +67,20 @@ const FeaturesSection = () => (
       <h2 className="mb-12 text-center font-bold text-3xl">Key Features</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {features.map((feature) => (
-          <Card
+          <CardRoot
             key={feature.title}
             className="border-base-200/50 dark:border-base-800/50"
           >
             <CardHeader>
               <feature.icon className="mb-2 size-8 text-green-600 dark:text-green-400" />
-              <CardTitle className="text-lg">{feature.title}</CardTitle>
+              <CardTitle asChild>
+                <h3 className="text-lg">{feature.title}</h3>
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-base-600 text-sm dark:text-base-400">
               {feature.description}
             </CardContent>
-          </Card>
+          </CardRoot>
         ))}
       </div>
     </div>

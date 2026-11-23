@@ -1,9 +1,13 @@
+import { Button } from "@omnidotdev/thornberry/button";
+import { CardContent, CardRoot } from "@omnidotdev/thornberry/card";
+import {
+  TabsContent,
+  TabsList,
+  TabsRoot,
+  TabsTrigger,
+} from "@omnidotdev/thornberry/tabs";
 import { CheckCheck, Copy } from "lucide-react";
 import { useState } from "react";
-
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ConfigExample = () => (
   <>
@@ -65,14 +69,14 @@ const ConfigSection = () => {
           Simple Configuration
         </h2>
 
-        <Tabs defaultValue="config" className="w-full">
+        <TabsRoot defaultValue="config" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="config">eden.toml</TabsTrigger>
             <TabsTrigger value="usage">Usage</TabsTrigger>
           </TabsList>
 
           <TabsContent value="config">
-            <Card>
+            <CardRoot>
               <CardContent className="relative pt-6">
                 <Button
                   variant="ghost"
@@ -92,11 +96,11 @@ const ConfigSection = () => {
                   </code>
                 </pre>
               </CardContent>
-            </Card>
+            </CardRoot>
           </TabsContent>
 
           <TabsContent value="usage">
-            <Card>
+            <CardRoot>
               <CardContent className="pt-6">
                 <pre className="overflow-x-auto font-mono text-sm">
                   <code>
@@ -104,9 +108,9 @@ const ConfigSection = () => {
                   </code>
                 </pre>
               </CardContent>
-            </Card>
+            </CardRoot>
           </TabsContent>
-        </Tabs>
+        </TabsRoot>
       </div>
     </section>
   );
