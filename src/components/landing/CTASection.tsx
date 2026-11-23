@@ -1,6 +1,6 @@
+import { Button } from "@omnidotdev/thornberry/button";
 import { ArrowRight, Github } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import app from "@/lib/config/app.config";
 
 /**
@@ -21,7 +21,7 @@ const CTASection = () => (
           className="bg-green-600 hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-500"
           onClick={() => window.open(app.links.github, "_blank")}
         >
-          <Github className="mr-2 size-5" />
+          <Github className="size-5" />
           View on GitHub
         </Button>
 
@@ -31,7 +31,7 @@ const CTASection = () => (
           onClick={() => window.open(app.links.docs, "_blank")}
         >
           Read the Docs
-          <ArrowRight className="ml-2 size-5" />
+          <ArrowRight className="size-5" />
         </Button>
       </div>
     </div>
