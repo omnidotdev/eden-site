@@ -13,6 +13,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@fontsource/texturina": "5.3.0",
     "@omnidotdev/thornberry": "github:omnidotdev/thornberry#372ebb2",
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-tabs": "^1.1.13",
