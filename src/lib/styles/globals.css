@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "@fontsource/texturina/400.css";
+@import "@fontsource/texturina/500.css";
+@import "@fontsource/texturina/600.css";
+@import "@fontsource/texturina/700.css";
 @import "@omnidotdev/thornberry/base.css";
 @import "tw-animate-css";
 @source "../../../node_modules/@omnidotdev/thornberry/build";
